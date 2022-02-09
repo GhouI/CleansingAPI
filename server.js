@@ -6,4 +6,5 @@ app.listen(80)
 
 app.get('/user', (req, res) => {
     console.log("hello")
+    res.send("Hello")
 })
