@@ -3,9 +3,9 @@ const app = express();
 
 
 
-app.listen(process.env.PORT)
+app.listen(process.env.PORT || 3000)
 
 app.get('/user', (req, res) => {
-    console.log("hello")
-    res.send("Hello")
+    console.log("hello" + req.body)
+    res.send("Hello, " + req.body)
 })
