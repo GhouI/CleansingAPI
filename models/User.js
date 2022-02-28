@@ -8,6 +8,7 @@ const UserModel = new mongoose.Schema({
     Exp: { type: Number, required: false },
     MaxExp: { type: Number, required: false },
     ZombieKilled: { type: Number, required: false },
+    CurrentOwnedWeapons: {type: Array, required:false},
 }, { collection: "AccountStorage" })
 
 
