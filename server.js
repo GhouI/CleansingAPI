@@ -66,6 +66,7 @@ async function signup(mail, password) {
         Exp: 0,
         MaxExp: 10,
         ZombieKilled: 0,
+        CurrentOwnedWeapons: ['Pistol']
     })
     newUser.save().then(() => {
         console.log("Account saved")
